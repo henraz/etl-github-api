@@ -10,7 +10,7 @@ Este projeto cria um processo simples de ETL e utiliza:
 
 3. Cloud Storage (GCP) para armazenar o arquivo final (`.csv`) em um bucket.
 
-## **Arquitetura**
+## **Data Pipeline**
 
 ![Image](img/py-4.png)
 
