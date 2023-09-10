@@ -2,13 +2,17 @@
 
 ## **Sobre**
 
-Este projeto cria um processo simples de ETL e utiliza:
+Este projeto cria um processo simples de ingestão no Google Cloud Storage em formato `csv` com dados dos projetos mais bem avaliados (com mais estrelas) do Github que usam Rust ou C ou Assembly. Os dados dos projetos foram obtidos por meio do consumo da API do Github.
 
-1. API do Github para obter os 30 projetos do GitHub mais bem avaliados (com mais estrelas) que usam Rust ou C ou Assembly;
+## **Ferramentas**
 
-2. Compute Engine (GCP) para criação de uma instância de uma máquina virtual ([e2-micro](https://cloud.google.com/compute/docs/general-purpose-machines#e2_machine_types)) com [debian](https://cloud.google.com/compute/docs/images/os-details#general-info) para processar os dados utilizando a biblioteca [pandas](https://pandas.pydata.org/);
+- [Google Cloud Storage](https://cloud.google.com/storage?hl=pt-br)
+- [Compute Engine](), com uma máquina do tipo [e2-micro](https://cloud.google.com/compute/docs/general-purpose-machines#e2_machine_types) e com [debian](https://cloud.google.com/compute/docs/images/os-details#general-info) instalado.
+- [Python](https://www.python.org/) (Versão: 3.11)
+- [Pandas](https://pandas.pydata.org/) (Versão: 2.1)
+- [Requests](https://requests.readthedocs.io/en/latest/) (Versão: 2.31)
+- [API Github](https://docs.github.com/en/rest)
 
-3. Cloud Storage (GCP) para armazenar o arquivo final (`.csv`) em um bucket.
 
 ## **Data Pipeline**
 
