@@ -2,12 +2,12 @@
 
 ## **Sobre**
 
-Este projeto cria um processo simples de ingestão no Google Cloud Storage em formato `csv` com dados dos projetos mais bem avaliados (com mais estrelas) do Github que usam Rust ou C ou Assembly. Os dados dos projetos foram obtidos por meio do consumo da API do Github.
+Este projeto cria um processo simples de ingestão no Google Cloud Storage com dados dos projetos mais bem avaliados (com mais estrelas) do Github que usam Rust ou C ou Assembly. Os dados dos projetos foram obtidos por meio do consumo da **API do Github**, manipulados utilizando **pandas** e salvos no Cloud Storage em formato **csv**. O processo foi executado através de uma máquina virtual no **Google Compute Engine**.
 
 ## **Ferramentas**
 
 - [Google Cloud Storage](https://cloud.google.com/storage?hl=pt-br)
-- [Compute Engine](), com uma máquina do tipo [e2-micro](https://cloud.google.com/compute/docs/general-purpose-machines#e2_machine_types) e com [debian](https://cloud.google.com/compute/docs/images/os-details#general-info) instalado.
+- [Google Compute Engine](https://cloud.google.com/compute), com uma máquina do tipo [e2-micro](https://cloud.google.com/compute/docs/general-purpose-machines#e2_machine_types) e com [debian](https://cloud.google.com/compute/docs/images/os-details#general-info) instalado.
 - [Python](https://www.python.org/) (Versão: 3.11)
 - [Pandas](https://pandas.pydata.org/) (Versão: 2.1)
 - [Requests](https://requests.readthedocs.io/en/latest/) (Versão: 2.31)
